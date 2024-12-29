@@ -1,65 +1,57 @@
 <!DOCTYPE html>
-<html lang="eng">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Shushman Choudhury">
-    <meta name="keywords" content="Stanford University">
-    <meta name="description" content="Shushman Choudhury Professional Website">
-    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes"/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shushman Choudhury</title>
-    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
-    <script type="text/javascript" src="js/jquery-2.2.1.min.js" ></script>
-    <script type="text/javascript" src="js/scripts.js" ></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
-    <div id="top_row">
-        <header>
-            <h1>Shushman Choudhury</h1>
-            <h3> Researcher, AI and Transportation</h3>
-        </header>
-
-        <nav>
-        	<a class="selected" href="index.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="shushman_resume.pdf" target="_blank">Resume</a>
-            <a href="misc.html">Miscellaneous</a>
-        </nav>
-    </div>
-
-    <div id="container">
-        <div id="content">
-
-    		<img src="images/shushman.jpg" alt="shushman" height="200" width="200"/>
-
-            <p> I am an <b>AI and autonomous transportation researcher</b>, currently working as a Machine Learning Software Engineer at Google Research. My team, SpaceTime, focuses on optimizing urban transportation networks. Before Google, I led research at Lacuna Technologies, creating algorithms and products for traffic and curbside management.</p>
-
-            <p>I earned my Ph.D. in Computer Science, specializing in Artificial Intelligence, from Stanford University. There, I collaborated with Professors <a href="http://mykel.kochenderfer.com/" target="_blank">Mykel Kochenderfer</a> and <a href="https://web.stanford.edu/~bohg/" target="_blank">Jeannette Bohg</a> and conducted award-winning research on multi-robot coordination algorithms. My work supports technologies like integrating delivery drones with ground vehicles. For more on my research, check out this <a href="https://www.bbc.co.uk/sounds/play/w3csz980" target="_blank">BBC Digital Planet episode</a> (around the 14-minute mark) or this <a href="https://venturebeat.com/2020/06/03/stanford-lab-envisions-delivery-drones-that-save-energy-by-taking-the-bus/" target="_blank">VentureBeat article</a>.
-
-            <p>I hold a Master's from Carnegie Mellon University's <a href="https://www.ri.cmu.edu/" target="_blank">Robotics Institute</a>. I was part of the Personal Robotics Lab, advised by Professor <a href="https://goodrobot.ai/" target="_blank">Siddhartha Srinivasa</a> (now at the University of Washington). I developed motion planning algorithms tested on HERB, the lab's robotic butler. Before that, I completed my B.Tech in Computer Science and Engineering at the Indian Institute of Technology Kharagpur.</p>
-
-            <p> I am the immensely proud younger brother of <a href="http://www.sanjibanchoudhury.com/" target="_blank">Sanjiban Choudhury</a>, who has shaped my understanding of research, robotics, and many other more important things.
-
-        </div>
-
-        <footer>
-        <hr/>
-        &copy: Shushman Choudhury<br/>
-        <a href="https://www.stanford.edu/" target="_blank">Stanford University</a></br>
-        <a href="mailto:shushman@cs.stanford.edu">
-            <img src="images/email.png" alt="email" height="45" width="45">
-        </a>
-        <a href="https://scholar.google.com/citations?user=vPnu7C4AAAAJ&hl=en&oi=ao">
-            <img src="images/scholar.png" alt="sch_logo" height="45" width="45">
-        </a>
-        <a href="https://github.com/Shushman">
-            <img src="images/github.png" alt="github" height="45" width="45">
-        </a></br>
-        Last updated: December 2020
-        </footer>
-    </div>
+    <header>
+        <h1>Shushman Choudhury</h1>
+        <h2>Multi-Domain AI Researcher</h2>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="profile-container">
+                <img src="images/shushman_cropped.jpg" alt="Shushman Choudhury" class="profile-image">
+            </div>
+            <div class="text-container">
+                <p>
+                    I am an applied Artificial Intelligence researcher with deep expertise across techniques such as foundation models, decision-making, and multi-agent systems, as well as domains including geospatial inference, autonomous networks, and mobility and transportation systems.
+                </p>
+                <p>
+                    Currently, I am an AI Software Engineer at Google Research, where I develop foundational models and world-scale applications that advance our understanding of the built environment. I have worked on both fundamental research and impactful cross-functional solutions with Google Maps, Sustainability, Ads, and other teams.
+                </p>
+                <p>
+                    I was previously Research Lead at Lacuna Technologies, where I developed inference and optimization algorithms to enhance urban transportation. During my Ph.D. in Computer Science from Stanford University, I conducted award-winning research in multi-agent decision-making for large-scale autonomous networks (covered by the BBC and Venture Beat).
+                </p>
+                <div class="social-icons">
+                    <a href="https://scholar.google.com/citations?user=vPnu7C4AAAAJ&hl=en" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/google-scholar.png" alt="Google Scholar">
+                    </a>
+                    <a href="https://www.linkedin.com/in/shushman-choudhury-b29049139/" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Shushman" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <h3>Recent News</h3>
+            <ul>
+                <li>November 2024: ACM published our recent <a href="https://dl.acm.org/doi/abs/10.1145/3681766.3699610" >vision paper</a> about a trajectory-powered foundation model.</li>
+                <li>November 2024: Google Research published my <a href="https://research.google/blog/scalable-learning-of-segment-level-traffic-congestion-functions/" target="_blank">blog post</a> about our scalable algorithm for learning traffic congestion functions.</li>
+                <li>October 2024: Invited to speak at the <a href="https://geoindustry.github.io/geoindustryworkshop2024/">GeoIndustry@ACM SIGSPATIAL 2024</a> workshop.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Shushman Choudhury</p>
+        <p>Last updated: December 2024</p>
+    </footer>
 </body>
-
 </html>
