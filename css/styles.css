@@ -151,6 +151,52 @@ nav {
     color: #ffdd57; /* Highlight on hover */
 }
 
+/* ====== Selected Publications Section ====== */
+.publications {
+    margin-top: 40px;
+}
+
+.publications h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the section heading */
+}
+
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.publication-image {
+    width: 160px; /* Thumbnail size */
+    height: 120px; /* Keep consistent aspect ratio */
+    object-fit: cover;
+    border-radius: 5px; /* Optional: Slight rounding for aesthetics */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.publication-info {
+    flex: 1;
+}
+
+.publication-info p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.publication-info a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.publication-info a:hover {
+    color: #ffdd57;
+}
+
+
 /* ====== Responsive Design ====== */
 @media (max-width: 768px) {
     .intro {
@@ -175,5 +221,15 @@ nav {
 
     body {
         padding: 10px; /* Add margin for smaller screens */
+    }
+
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .publication-image {
+        margin-bottom: 10px;
     }
 }
