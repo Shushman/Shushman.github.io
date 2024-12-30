@@ -1,6 +1,7 @@
 /* ====== Global Styles ====== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #0056b3;
+    background-color: maroon;
     color: white;
 }
 
@@ -49,8 +50,8 @@ main {
 }
 
 .profile-image {
-    width: 150px; /* Profile image size */
-    height: 150px;
+    width: 240px; /* Profile image size */
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -73,8 +74,8 @@ main {
 }
 
 .social-icons a img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     transition: transform 0.3s;
 }
 
@@ -106,7 +107,7 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 10px 0;
-    background-color: #0056b3;
+    background-color: maroon;
     color: white;
     font-size: 0.9em;
 }
@@ -114,16 +115,65 @@ footer {
 /* ====== Links ====== */
 a {
     text-decoration: none;
-    color: inherit; /* Links inherit the surrounding text color */
+    color: purple; /* Links inherit the surrounding text color */
+}
+
+/* ====== Navigation Styles ====== */
+nav {
+    background-color: maroon;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem
+}
+
+.nav-links {
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for side-by-side alignment */
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Add space between links */
+}
+
+.nav-links li {
+    display: inline; /* Ensure links are inline elements */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Link color */
+    font-weight: bold; /* Emphasize links */
+    font-size: 1em;
+    transition: color 0.3s; /* Smooth color change */
+}
+
+.nav-links a:hover {
+    color: #ffdd57; /* Highlight on hover */
 }
 
 /* ====== Responsive Design ====== */
 @media (max-width: 768px) {
     .intro {
         flex-direction: column;
+        text-align: center;
     }
 
     .profile-image {
+        width: 120px; /* Smaller image for mobile */
+        height: 120px;
         margin: 0 auto;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        gap: 10px;
+    }
+
+    .news ul {
+        padding-left: 10px; /* Reduce indentation */
+    }
+
+    body {
+        padding: 10px; /* Add margin for smaller screens */
     }
 }
