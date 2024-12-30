@@ -170,8 +170,8 @@ nav {
 }
 
 .publication-image {
-    width: 160px; /* Thumbnail size */
-    height: 120px; /* Keep consistent aspect ratio */
+    width: 80px; /* Thumbnail size */
+    height: 80px; /* Keep consistent aspect ratio */
     object-fit: cover;
     border-radius: 5px; /* Optional: Slight rounding for aesthetics */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
