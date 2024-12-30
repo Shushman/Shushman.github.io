@@ -170,8 +170,8 @@ nav {
 }
 
 .publication-image {
-    width: 120px !important;
-    height: 80px !important;
+    width: 200px !important;
+    height: 150px !important;
     object-fit: cover;
     border-radius: 5px; /* Optional: Slight rounding for aesthetics */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -227,5 +227,9 @@ nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .publication-image {
+        width: 100px; /* Smaller size for mobile */
+        height: 75px;
     }
 }
