@@ -111,4 +111,19 @@ footer {
     font-size: 0.9em;
 }
 
-/*
+/* ====== Links ====== */
+a {
+    text-decoration: none;
+    color: inherit; /* Links inherit the surrounding text color */
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+    }
+}
